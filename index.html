@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AIEP</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo16x.png" sizes="16x16">
+    <style>
+        /* Estilo para centrar la imagen */
+        .center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="row">
+    <div class="col-sm-8">
+        <img src="imagenes/imagen3.jpeg" width="850px" height="1000px">
+    </div>
+    <div class="col-sm-4">
+        <img src="imagenes/aieplogo.png" width="280px" height="300px" alt="" class="center-img"> <!-- Logotipo de AIEP -->
+        <!-- Formulario de inicio de sesión -->
+        <label for="usu" class="form-label">Correo Aiep:</label><br>
+        <input type="text" class="form-control" id="usu" name="usu" placeholder="Ingrese Correo" maxlength="50"><br>
+        <!-- login password-->
+        <label for="pass" class="form-label">Contraseña:</label><br>
+        <input type="password" class="form-control" id="pass" name="pass" placeholder="Ingrese contraseña" maxlength="12"><br>
+        <!--botones-->
+        <button type="button" class="btn btn-primary" onclick="validar()">Ingresar</button>
+        <button type="button" class="btn btn-secondary" onclick="limpiar()">Limpiar</button><br><br>
+        <!-- Enlace para contraseña olvidada -->
+        <a href="#" class="text-decoration-none">¿Olvidó su contraseña?</a>
+        <!--botones-->
+        <a href="https://www.facebook.com/aiep.oficial/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/aiep?lang=es" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/school/instituto-profesional-aiep/?originalSubdomain=cl" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/aiep_oficial/?hl=es" class="fa fa-instagram"></a>
+      
+        
+        <p id="mensaje" name="mensaje"></p> <!--mensaje de alerta para indicar que esta en blanco -->
+    </div>
+    
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/validar.js"></script>
+</body>
+</html>
